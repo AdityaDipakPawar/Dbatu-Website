@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to DBATU</title>
+    <link rel="icon" type="image/png" href="img/batu_logo.png">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/auth-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body id="home">
+    <!-- Start Your Body Code From here -->
+    <div class="wrapper">
+        <!-- header starts here -->
+        <header id="header" class="">
+            <!-- header -->
+            <div class="header-wrapper">
+
+                <div class="header-container">
+                    <div>
+                        <div class="logo-name">
+                            <div class="logo"><a href="index.html" title=""><img src="img/batu_logo.png" alt="logo"></a>
+                            </div>
+                            <div class="name">
+                                <a href="index.html" title="">
+                                    <h5>Dr. Babasaheb Ambedkar Technological University</h5>
+                                    <h5 class="primary-color">Lonere</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-links">
+                        <div class="contact-links">
+                            <a href="#" data-toggle="popover" title="Address" data-content="Dr. Babasaheb Ambedkar Technological University,
+                           Lonere, Tal- Mangaon, Dist – Raigad. Maharashtra (India). 402103" data-placement="bottom">
+                                <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" data-toggle="popover" title="Phone No." data-content="02140 275081 / 212" data-placement="bottom">
+                                <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" data-toggle="popover" title="Email" data-content="registrar@dbatu.ac.in" data-placement="bottom">
+                                <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="auth-buttons">
+                            <a href="#" data-toggle="modal" data-target="#loginModal" class="btn btn-outline-primary">Login</a>
+                            <a href="#" data-toggle="modal" data-target="#registerModal" class="btn btn-primary">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="navbar navbar-inverse navbar-custom" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">University <b
+                                            class="caret"></b></a>
+                                    <ul class="dropdown-menu multi-level">
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="directors_message.html">HOD Message</a></li>
+                                        <!-- <li><a href="bog.html">Board of Governors</a></li>
+                                    <li><a href="society_members.html">Society Members</a></li>
+                                    <li><a href="academic_council.html">Academic Council</a></li>
+                                    <li><a href="finance_committee.html">Finance Committee</a></li>
+                                    <li><a href="rti.html">RTI</a></li>
+                                    <li><a href="pdf/MOU.pdf">MOU</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Linkages</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="linkages/da-iict.html">DA-IICT</a></li>
+                                            <li><a href="linkages/gsfc.html">GSFC</a></li>
+                                            <li><a href="linkages/germi.html">GERMI</a></li>
+                                            <li><a href="linkages/tcs.html">TCS</a></li>
+                                        </ul>
+                                    </li> -->
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics <b
+                                            class="caret"></b></a>
+                                    <ul class="dropdown-menu multi-level">
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">B.Tech</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="btech_cse.html">CSE</a></li>
+                                                <li><a href="btech_it.html">IT</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">M.Tech</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="mtech_cse.html">CSE</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="phd.html">Ph.D</a></li>
+                                        <li><a href="pdf/ac-odd-23-24.pdf">Academic Calender</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission <b
+                                            class="caret"></b></a>
+                                    <ul class="dropdown-menu multi-level">
+                                        <li><a href="btech_admission.html">B.Tech</a></li>
+                                        <li><a href="mtech_admission.html">M.Tech</a></li>
+                                        <li><a href="phd_admission.html">Ph.D</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="courses.html">Courses</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">People <b
+                                            class="caret"></b></a>
+                                    <ul class="dropdown-menu multi-level">
+                                        <li><a href="faculty.html">Faculty</a></li>
+                                        <!--  <li><a href="visiting_faculty.html">Visiting Faculty</a></li> -->
+                                        <li><a href="staff.html">Staff</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b
+                                            class="caret"></b></a>
+                                    <ul class="dropdown-menu multi-level">
+                                        <li><a href="faq.html">FAQs</a></li>
+                                        <li><a href="student_corner.html">Student's Corner</a></li>
+                                        <!-- <li><a href="http://moodle.iiitv.ac.in" target="_blank">Moodle</a></li> -->
+                                        <li><a href="library.html">Library</a></li>
+                                        <!-- <li><a href="invited_talks.html">Invited Talks</a></li> -->
+                                    </ul>
+                                </li>
+                                <li><a href="career.html">Career</a></li>
+                                <li><a href="gallery.html">Photo Gallery</a></li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- /header -->
+
+        <!-- courses -->
+
+
+        <!-- filters -->
+        <div _ngcontent-ng-c2139915473="" class="filters-wrapper">
+            <div _ngcontent-ng-c2139915473="" class="all-filters">
+                <div _ngcontent-ng-c2139915473="" class="name filter">
+                    <input _ngcontent-ng-c2139915473="" id="searchBox" type="text" placeholder="Search for courses"
+                        class="ng-untouched ng-pristine ng-valid" fdprocessedid="coxn2">
+                    <svg _ngcontent-ng-c2139915473="" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path _ngcontent-ng-c2139915473="" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                            d="M11.125 17.25c1.617 0 3.32-.695 4.375-1.75L19 19l-3.5-3.5c1.021-1.005 1.75-2.894 1.75-4.375C17.25 7.742 14.508 5 11.125 5S5 7.742 5 11.125s2.742 6.125 6.125 6.125z">
+                        </path>
+                    </svg>
+                    <!---->
+                </div>
+                <!-- <div _ngcontent-ng-c2139915473="" class="name filter">
+                    <input _ngcontent-ng-c2139915473="" type="text" placeholder="Search by instructor"
+                        class="ng-untouched ng-pristine ng-valid" fdprocessedid="sdr96w">
+                    <svg _ngcontent-ng-c2139915473="" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path _ngcontent-ng-c2139915473="" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                            d="M11.125 17.25c1.617 0 3.32-.695 4.375-1.75L19 19l-3.5-3.5c1.021-1.005 1.75-2.894 1.75-4.375C17.25 7.742 14.508 5 11.125 5S5 7.742 5 11.125s2.742 6.125 6.125 6.125z">
+                        </path>
+                    </svg>
+                    
+                </div> -->
+                <!---->
+                <!-- <div _ngcontent-ng-c2139915473="" class="discipline filter" id="branchFilter">
+                    <app-nptel-dropdown _ngcontent-ng-c2139915473="" _nghost-ng-c3543896089=""
+                        class="ng-untouched ng-valid ng-dirty">
+                        <div _ngcontent-ng-c3543896089="" attachoutsideonclick="true" class="pseudo-input">
+                            <span _ngcontent-ng-c3543896089="">Branch</span>
+                            <svg _ngcontent-ng-c3543896089="" xmlns="http://www.w3.org/2000/svg" width="11" height="6"
+                                viewBox="0 0 11 6">
+                                <path _ngcontent-ng-c3543896089="" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round" d="M5 7.5L9.99 12.5 15 7.5" transform="translate(-4 -7)">
+                                </path>
+                            </svg>
+                        </div>
+                        <ul _ngcontent-ng-c3543896089="" class="pseudo-options">
+                            <li _ngcontent-ng-c3543896089=""> Aerospace Engineering </li>
+                            
+                            <li _ngcontent-ng-c3543896089=""> Biotechnology </li>
+                            
+                            <li _ngcontent-ng-c3543896089=""> Chemical Engineering </li>
+                            
+                            <li _ngcontent-ng-c3543896089=""> Chemistry and Biochemistry </li>
+                            <li _ngcontent-ng-c3543896089=""> Civil Engineering </li>
+                            <li _ngcontent-ng-c3543896089="" class=""> Computer Science and Engineering </li>
+                            <li _ngcontent-ng-c3543896089=""> Engineering Design </li>
+                            <li _ngcontent-ng-c3543896089=""> Electrical Engineering </li>
+                            <li _ngcontent-ng-c3543896089=""> Humanities and Social Sciences </li>
+                            <li _ngcontent-ng-c3543896089=""> Management </li>
+                            <li _ngcontent-ng-c3543896089=""> Mathematics </li>
+                            <li _ngcontent-ng-c3543896089=""> Mechanical Engineering </li>
+                            <li _ngcontent-ng-c3543896089=""> Metallurgy and Material Science </li>
+                            <li _ngcontent-ng-c3543896089=""> Ocean Engineering </li>
+                            <li _ngcontent-ng-c3543896089=""> Physics </li>
+                            <li _ngcontent-ng-c3543896089=""> Textile Engineering </li>
+                            <li _ngcontent-ng-c3543896089=""> Electronics &amp; Communication Engineering </li>
+                            <li _ngcontent-ng-c3543896089=""> Nanotechnology </li>
+                            <li _ngcontent-ng-c3543896089=""> Atmospheric Science </li>
+                            <li _ngcontent-ng-c3543896089=""> Environmental Science </li>
+                            <li _ngcontent-ng-c3543896089=""> General </li>
+                            <li _ngcontent-ng-c3543896089=""> Basic courses-Sem 1 and 2 </li>
+                            <li _ngcontent-ng-c3543896089=""> Mining Engineering </li>
+                            <li _ngcontent-ng-c3543896089=""> Architecture </li>
+                            <li _ngcontent-ng-c3543896089=""> Automobile Engineering </li>
+                            <li _ngcontent-ng-c3543896089=""> Agriculture </li>
+                            <li _ngcontent-ng-c3543896089=""> Multidisciplinary </li>
+                            <li _ngcontent-ng-c3543896089=""> Special Series </li>
+                            <li _ngcontent-ng-c3543896089=""> Law </li>
+                            <li _ngcontent-ng-c3543896089=""> Economics </li>
+                        </ul>
+                    </app-nptel-dropdown>
+                </div>
+                
+
+                <div _ngcontent-ng-c2139915473="" class="University filter">
+                    <app-nptel-dropdown _ngcontent-ng-c2139915473="" _nghost-ng-c3543896089=""
+                        class="ng-untouched ng-valid ng-dirty">
+                        <div _ngcontent-ng-c3543896089="" attachoutsideonclick="true" class="pseudo-input">
+                            <span _ngcontent-ng-c3543896089="">University</span>
+                            <svg _ngcontent-ng-c3543896089="" xmlns="http://www.w3.org/2000/svg" width="11" height="6"
+                                viewBox="0 0 11 6">
+                                <path _ngcontent-ng-c3543896089="" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round" d="M5 7.5L9.99 12.5 15 7.5" transform="translate(-4 -7)">
+                                </path>
+                            </svg>
+                        </div>
+                        <ul _ngcontent-ng-c3543896089="" class="pseudo-options">
+                            <li _ngcontent-ng-c3543896089=""> IIT Bombay </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Guwahati </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Kanpur </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Kharagpur </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Madras </li>
+                            <li _ngcontent-ng-c3543896089=""> IISc Bangalore </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Delhi </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Roorkee </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Bombay,IISER Thiruvananthapuram </li>
+                            <li _ngcontent-ng-c3543896089=""> IISER Mohali </li>
+                            <li _ngcontent-ng-c3543896089=""> IISER Pune </li>
+                            <li _ngcontent-ng-c3543896089=""> IISER Bhopal </li>
+                            <li _ngcontent-ng-c3543896089=""> NCL Pune, IISER Pune </li>
+                            
+                            <li _ngcontent-ng-c3543896089=""> IIIT Hyderabad </li>
+                            <li _ngcontent-ng-c3543896089=""> IIIT Bangalore </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Patna </li>
+                            <li _ngcontent-ng-c3543896089=""> IIIT Delhi </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Ropar </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Hyderabad </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Gandhinagar IMSC </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Gandhinagar </li>
+                            <li _ngcontent-ng-c3543896089=""> IBM and IITM </li>
+                            <li _ngcontent-ng-c3543896089=""> IIITB </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Jammu </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Mandi </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT(BHU) Varanasi </li>
+                            <li _ngcontent-ng-c3543896089=""> Gautam Buddha University </li>
+                            <li _ngcontent-ng-c3543896089=""> EM Strasbourg Business School (University of Stras) </li>
+                            
+                            <li _ngcontent-ng-c3543896089=""> Chennai Mathematical University </li>
+                            <li _ngcontent-ng-c3543896089=""> IMSc </li>
+                            <li _ngcontent-ng-c3543896089=""> University of Chemical Technology, Mumbai </li>
+                            <li _ngcontent-ng-c3543896089=""> ISI Bangalore </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Palakkad </li>
+                            <li _ngcontent-ng-c3543896089=""> IIEST Shibpur </li>
+                            <li _ngcontent-ng-c3543896089=""> IITM IIT Palakkad </li>
+                            <li _ngcontent-ng-c3543896089=""> IISER Thiruvananthapuram </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Madras,IIT Hyderabad </li>
+                            <li _ngcontent-ng-c3543896089=""> Homi Bhabha National University </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT-ISM </li>
+                            <li _ngcontent-ng-c3543896089=""> PSG Tech., Coimbatore MBCET, Trivandrum SRM IST </li>
+                            
+                            <li _ngcontent-ng-c3543896089=""> KTH Royal University of Technology, Sweden </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Madras &amp; Google </li>
+                            <li _ngcontent-ng-c3543896089=""> Persistent Computing Systems &amp; CMI </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Indore </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Palakkad KLE Technological University NVIDIA </li>
+                            
+                            <li _ngcontent-ng-c3543896089=""> IIT Indore, IIT Gandhi nagar </li>
+                            <li _ngcontent-ng-c3543896089=""> Netaji Subhas University of Technology and IIT Jammu </li>
+                            
+                            <li _ngcontent-ng-c3543896089=""> Nimhans Bangalore IISc </li>
+                            <li _ngcontent-ng-c3543896089=""> Visva Bharati University, Santiniketan </li>
+                            <li _ngcontent-ng-c3543896089=""> Banaras Hindu University </li>
+                            <li _ngcontent-ng-c3543896089=""> ICMR-National University of Epidemiology </li>
+                            <li _ngcontent-ng-c3543896089=""> University of Hyderabad </li>
+                            <li _ngcontent-ng-c3543896089=""> Texas A&amp;M Univ. </li>
+                            <li _ngcontent-ng-c3543896089=""> IITM &amp; Wipro 3D </li>
+                            <li _ngcontent-ng-c3543896089=""> EM Strasbourg Business School (University of Strasbourg)
+                                and IITM </li>
+                            <li _ngcontent-ng-c3543896089=""> Kerala School of Mathematics </li>
+                            <li _ngcontent-ng-c3543896089=""> IIT Bhubaneshwar </li>
+                            <li _ngcontent-ng-c3543896089=""> IISc &amp; Nimhans </li>
+                            <li _ngcontent-ng-c3543896089=""> ICMR - Regional Medical Research Centre, Bhubaneswar </li>
+                            
+                            <li _ngcontent-ng-c3543896089=""> ICMR-NIRT </li>
+                            <li _ngcontent-ng-c3543896089=""> CDSA THSTI DBT </li>
+                            <li _ngcontent-ng-c3543896089=""> CDSCO Ministry of Health &amp; Family Welfare Former
+                                DDC(I) CDSCO CDSA THSTI DBT </li>
+                            <li _ngcontent-ng-c3543896089=""> IISER Kolkata </li>
+                            <li _ngcontent-ng-c3543896089=""> Tagore Dental College &amp; Hospital &amp; IITM </li>
+                            
+                            <li _ngcontent-ng-c3543896089=""> NCF IISER Mohali SACON IISER Pune NCF IISER Tirupati IISc
+                            </li>
+                            <li _ngcontent-ng-c3543896089=""> Saveetha Dental College &amp; IITM </li>
+                            <li _ngcontent-ng-c3543896089=""> Chettinad Hospital and Research University </li>
+                            <li _ngcontent-ng-c3543896089=""> National Law School of India University </li>
+                            <li _ngcontent-ng-c3543896089=""> NLSIU </li>
+                        </ul>
+                    </app-nptel-dropdown>
+                </div>
+                
+
+                <div _ngcontent-ng-c2139915473="" class="course-type filter">
+                    <app-nptel-dropdown _ngcontent-ng-c2139915473="" _nghost-ng-c3543896089=""
+                        class="ng-untouched ng-valid ng-dirty">
+                        <div _ngcontent-ng-c3543896089="" attachoutsideonclick="true" class="pseudo-input"><span
+                                _ngcontent-ng-c3543896089="">Course Type</span>
+                            <svg _ngcontent-ng-c3543896089="" xmlns="http://www.w3.org/2000/svg" width="11" height="6"
+                                viewBox="0 0 11 6">
+                                <path _ngcontent-ng-c3543896089="" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round" d="M5 7.5L9.99 12.5 15 7.5" transform="translate(-4 -7)">
+                                </path>
+                            </svg>
+                        </div>
+                        <ul _ngcontent-ng-c3543896089="" class="pseudo-options">
+                            <li _ngcontent-ng-c3543896089=""> Video </li>
+                            <li _ngcontent-ng-c3543896089=""> Web </li>
+                        </ul>
+                    </app-nptel-dropdown>
+                </div> -->
+
+            </div>
+            <div _ngcontent-ng-c2139915473="" class="applied-filters added">
+                <!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+            </div><!----><!---->
+        </div>
+
+
+
+
+
+
+
+        <!-- courses list -->
+
+        <div _ngcontent-ng-c2139915473="" class="course-list" id="courseList">
+            <app-course-card _ngcontent-ng-c2139915473="" _nghost-ng-c1611386007="">
+                <div _ngcontent-ng-c1611386007="" class="course-card">
+                    <a _ngcontent-ng-c1611386007="" target="_blank"
+                        href="https://youtube.com/playlist?list=PLOzRYVm0a65ey1nPhnbfrz59Hvu-NVob7&si=YmcGY2l9aCO7iLwk">
+                        <!-- <span _ngcontent-ng-c1611386007="" class="new">Enroll Now</span> -->
+                        <span _ngcontent-ng-c1611386007="" class="highlighter"></span>
+                        <div _ngcontent-ng-c1611386007="" class="content">
+                            <div _ngcontent-ng-c1611386007="" class="name">Introduction to Aerospace Engineering</div>
+                            <div _ngcontent-ng-c1611386007="" class="discipline">Aerospace Engineering</div>
+                            <div _ngcontent-ng-c1611386007="" class="meta-data"><span _ngcontent-ng-c1611386007="">Prof.
+                                    Rajkumar Pant</span>
+                                <br _ngcontent-ng-c1611386007="">
+                                <span _ngcontent-ng-c1611386007="">IIT Bombay</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </app-course-card>
+
+
+            <app-course-card _ngcontent-ng-c2139915473="" _nghost-ng-c1611386007="">
+                <div _ngcontent-ng-c1611386007="" class="course-card">
+                    <a _ngcontent-ng-c1611386007="" target="_blank"
+                        href="https://youtube.com/playlist?list=PLOzRYVm0a65dHb6f2kmW7PBncvpedPiWe&si=GAOE4TotM1HTRSbZ">
+                        <!-- <span _ngcontent-ng-c1611386007="" class="new">Enroll Now</span> -->
+                        <span _ngcontent-ng-c1611386007="" class="highlighter"></span>
+                        <div _ngcontent-ng-c1611386007="" class="content">
+                            <div _ngcontent-ng-c1611386007="" class="name">Introduction to Aircraft Design</div>
+                            <div _ngcontent-ng-c1611386007="" class="discipline">Aerospace Engineering</div>
+                            <div _ngcontent-ng-c1611386007="" class="meta-data">
+                                <span _ngcontent-ng-c1611386007="">Prof. Rajkumar Pant</span>
+                                <br _ngcontent-ng-c1611386007="">
+                                <span _ngcontent-ng-c1611386007="">IIT Bombay</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </app-course-card>
+
+
+            <app-course-card _ngcontent-ng-c2139915473="" _nghost-ng-c1611386007="">
+                <div _ngcontent-ng-c1611386007="" class="course-card">
+                    <a _ngcontent-ng-c1611386007="" target="_blank"
+                        href="https://youtube.com/playlist?list=PLxR_6l4pE6quoVjSj_ShLfIftUpd_e5yo&si=h3I3ws_a756mbZKI">
+                        <!-- <span _ngcontent-ng-c1611386007="" class="new">Enroll Now</span> -->
+                        <!---->
+                        <span _ngcontent-ng-c1611386007="" class="highlighter"></span>
+                        <div _ngcontent-ng-c1611386007="" class="content">
+                            <div _ngcontent-ng-c1611386007="" class="name">Introduction to algorithms and analysis</div>
+                            <div _ngcontent-ng-c1611386007="" class="discipline">Computer Science and Engineering</div>
+                            <div _ngcontent-ng-c1611386007="" class="meta-data"><span _ngcontent-ng-c1611386007="">Prof.
+                                    Sourav Mukhopadhyay</span>
+                                <br _ngcontent-ng-c1611386007="">
+                                <span _ngcontent-ng-c1611386007="">IIT Kharagpur</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </app-course-card>
+
+
+            <app-course-card _ngcontent-ng-c2139915473="" _nghost-ng-c1611386007="">
+                <div _ngcontent-ng-c1611386007="" class="course-card">
+                    <a _ngcontent-ng-c1611386007="" target="_blank"
+                        href="https://youtube.com/playlist?list=PLIg1dOXc_acbdJo-AE5RXpIM_rvwrerwR&si=eXi4p2SbSYDJ9j1-">
+                        <!-- <span _ngcontent-ng-c1611386007="" class="new">Enroll Now</span> -->
+                        <!---->
+                        <span _ngcontent-ng-c1611386007="" class="highlighter"></span>
+                        <div _ngcontent-ng-c1611386007="" class="content">
+                            <div _ngcontent-ng-c1611386007="" class="name">Introduction to Machine Learning</div>
+                            <div _ngcontent-ng-c1611386007="" class="discipline">Computer Science and Engineering</div>
+                            <div _ngcontent-ng-c1611386007="" class="meta-data"><span _ngcontent-ng-c1611386007="">Prof.
+                                    S. Sarkar</span>
+                                <br _ngcontent-ng-c1611386007="">
+                                <span _ngcontent-ng-c1611386007="">IIT Kharagpur</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </app-course-card>
+
+
+            <app-course-card _ngcontent-ng-c2139915473="" _nghost-ng-c1611386007="">
+                <div _ngcontent-ng-c1611386007="" class="course-card"><a _ngcontent-ng-c1611386007="" target="_blank"
+                        href="https://youtube.com/playlist?list=PLOzRYVm0a65dAAfy0d4aRtj5v0OCAvoCY&si=n0idVss5CxkruZYI">
+                        <!-- <span _ngcontent-ng-c1611386007="" class="new">Enroll Now</span> -->
+                            <span _ngcontent-ng-c1611386007="" class="highlighter"></span>
+                        <div _ngcontent-ng-c1611386007="" class="content">
+                            <div _ngcontent-ng-c1611386007="" class="name">NOC:Design and Engineering of
+                                Computer Systems</div>
+                            <div _ngcontent-ng-c1611386007="" class="discipline">Computer Science and
+                                Engineering</div>
+                            <div _ngcontent-ng-c1611386007="" class="meta-data"><span _ngcontent-ng-c1611386007="">Prof.
+                                    Mythili Vutukuru</span><br _ngcontent-ng-c1611386007=""><span
+                                    _ngcontent-ng-c1611386007="">IIT
+                                    Bombay</span></div>
+                        </div>
+                    </a></div><!----><!---->
+            </app-course-card>
+
+
+
+
+            <!-- Footer -->
+            <!-- <footer>
+        <div class="footer-wrapper">
+            <span class="logo"><img src="img/batu_logo.png" alt=""></span>
+            <div class="row">
+                <div class="col-sm-4 address">
+                    <strong>Address : </strong>Dr. Babasaheb Ambedkar Technological University, Lonere, Tal- Mangaon, Dist - Raigad. Maharashtra (India). 402103
+                </div>
+                <div class="col-sm-4 links">
+                    <div>
+                        <a href="#news">News</a>
+                        <i class="seperator"></i>
+                        <a href="#announcements">Announcement</a>
+                        <i class="seperator"></i>
+                        <a href="#events">Events</a>
+                    </div>
+                    
+                    <div>
+                        <a href="admissions.html">Admission</a>
+                        <i class="seperator"></i>
+                        <a href="student_corner.html">Student</a>
+                        <i class="seperator"></i>
+                        <a href="faculty.html">Faculty</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 footer-social">
+                    <a href="#!"><i class="fa fa-facebook" aria-hidden="true" title="Official Facebook Page"></i></a>
+                    <a href="https://github.com"><i class="fa fa-github" aria-hidden="true"
+                                                          title="Github Group"></i></a>
+                    <a href="#!"><i class="fa fa-linkedin" aria-hidden="true" title="LinkedIn Profile"></i></a>
+                    <a href="#!" title=""><i class="fa fa-twitter" aria-hidden="true"
+                                             title="Official Twitter Account"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/jquery.paginate.min.js "></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/434d359724.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="popover"]').popover();
+                $('[data-toggle="popover"]').on('click', function (e) {
+                    $('[data-toggle="popover"]').not(this).popover('hide');
+                });
+            });
+        </script>
+
+        <!-- search filter -->
+        <script>
+            const searchBox = document.getElementById('searchBox');
+            const courseList = document.getElementById('courseList');
+            const courses = courseList.getElementsByClassName('course-card');
+
+            searchBox.addEventListener('input', () => {
+                const searchText = searchBox.value.toLowerCase();
+                Array.from(courses).forEach(course => {
+                    const courseName = course.querySelector('.name').textContent.toLowerCase();
+                    const discipline = course.querySelector('.discipline').textContent.toLowerCase();
+                    const metadata = course.querySelector('.meta-data').textContent.toLowerCase();
+                    if (
+                        courseName.includes(searchText) ||
+                        discipline.includes(searchText) ||
+                        metadata.includes(searchText)
+                    ) {
+                        course.style.display = '';
+                    } else {
+                        course.style.display = 'none';
+                    }
+                });
+            });
+        </script>
+
+
+        <script>
+            const branchFilter = document.getElementById('branchFilter');
+            const coursed = document.querySelectorAll('.course-card');
+
+            branchFilter.addEventListener('change', () => {
+                const selectedBranch = branchFilter.value.toLowerCase();
+
+                courses.forEach(course => {
+                    const courseBranch = course.getAttribute('data-discipline').toLowerCase();
+                    if (selectedBranch === 'all' || courseBranch === selectedBranch) {
+                        course.style.display = '';
+                    } else {
+                        course.style.display = 'none';
+                    }
+                });
+            });
+        </script>
+
+        <!-- Login Modal -->
+        <div class="modal fade auth-modal" id="loginModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="loginForm" action="auth/login.php" method="POST" class="auth-form">
+                            <div class="form-message"></div>
+                            
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email address" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" name="password" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary w-100">Login</button>
+                            </div>
+                            
+                            <div class="auth-switch">
+                                Don't have an account? 
+                                <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">Sign up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Register Modal -->
+        <div class="modal fade auth-modal" id="registerModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Create Account</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="registerForm" action="auth/register.php" method="POST" class="auth-form">
+                            <div class="form-message"></div>
+                            
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Full name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email address" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" name="password" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                            </div>
+                            
+                            <div class="auth-switch">
+                                Already have an account? 
+                                <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">Login</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        $(document).ready(function() {
+            // Handle form submissions
+            $('.auth-form').on('submit', function(e) {
+                e.preventDefault();
+                
+                const $form = $(this);
+                const $submitBtn = $form.find('button[type="submit"]');
+                const $message = $form.find('.form-message');
+                
+                // Disable submit button and show loading state
+                $submitBtn.prop('disabled', true);
+                $submitBtn.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...');
+                
+                $.ajax({
+                    type: 'POST',
+                    url: $form.attr('action'),
+                    data: $form.serialize(),
+                    dataType: 'json',
+                    success: function(response) {
+                        if (response.success) {
+                            $message
+                                .removeClass('alert-danger')
+                                .addClass('alert alert-success')
+                                .html(response.message)
+                                .show();
+                            
+                            if ($form.attr('id') === 'loginForm') {
+                                // Redirect after successful login
+                                setTimeout(function() {
+                                    window.location.reload();
+                                }, 1500);
+                            } else {
+                                // Switch to login modal after successful registration
+                                setTimeout(function() {
+                                    $('#registerModal').modal('hide');
+                                    $('#loginModal').modal('show');
+                                }, 1500);
+                            }
+                        } else {
+                            $message
+                                .removeClass('alert-success')
+                                .addClass('alert alert-danger')
+                                .html(response.message)
+                                .show();
+                        }
+                    },
+                    error: function() {
+                        $message
+                            .removeClass('alert-success')
+                            .addClass('alert alert-danger')
+                            .html('An error occurred. Please try again.')
+                            .show();
+                    },
+                    complete: function() {
+                        // Re-enable submit button and restore text
+                        $submitBtn.prop('disabled', false);
+                        $submitBtn.html($form.attr('id') === 'loginForm' ? 'Login' : 'Create Account');
+                    }
+                });
+            });
+            
+            // Clear messages when modals are hidden
+            $('.modal').on('hidden.bs.modal', function() {
+                $(this).find('.form-message').hide().empty();
+                $(this).find('form')[0].reset();
+            });
+        });
+        </script>
+
+</body>
+
+</html>

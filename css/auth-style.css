@@ -1,0 +1,241 @@
+/* Auth Modal Styles */
+.auth-modal .modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.auth-modal .modal-header {
+    padding: 1rem 1rem 0;
+}
+
+.auth-modal .close {
+    font-size: 2rem;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.auth-modal .close:hover {
+    opacity: 0.75;
+}
+
+/* Auth Form Styles */
+.auth-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.auth-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.auth-form .input-group {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.auth-form .input-group-text {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-right: none;
+    color: #6c757d;
+    padding: 0.75rem 1rem;
+}
+
+.auth-form .form-control {
+    height: 45px;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.auth-form .form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+.auth-form .btn {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+}
+
+.auth-form .btn-primary {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+}
+
+.auth-form .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,123,255,0.2);
+}
+
+/* Auth Switch Styles */
+.auth-switch {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.auth-switch span {
+    font-size: 0.9rem;
+}
+
+.auth-switch a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+/* Form Message Styles */
+.form-message {
+    display: none;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.welcome-text {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+/* Header Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.auth-buttons .btn {
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.auth-buttons .btn-outline-primary {
+    border: 2px solid #007bff;
+}
+
+.auth-buttons .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-1px);
+}
+
+.auth-buttons .btn-primary {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+}
+
+.auth-buttons .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,123,255,0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    .auth-modal .modal-dialog {
+        margin: 1rem;
+    }
+    
+    .auth-form .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+    
+    .auth-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .auth-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.auth-buttons .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.auth-buttons .btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+    background-color: transparent;
+}
+
+.auth-buttons .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.auth-buttons .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-links {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+    
+    .auth-buttons {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+} 
